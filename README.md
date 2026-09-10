@@ -30,5 +30,5 @@ GitHub: jenna-aurora
 
 ## Links
 
-- Live: https://YOUR-USERNAME.github.io/capstone/
-- Repo: https://github.com/YOUR-USERNAME/capstone
+- Live: https://TammyAlbinDev.github.io/capstone/
+- Repo: https://github.com/TammyAlbinDev/capstone
