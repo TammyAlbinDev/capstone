@@ -27,3 +27,8 @@ More Info URL: https://boardgamegeek.com/boardgame/174430/gloomhaven
 
 ## Accountability Partner
 GitHub: jenna-aurora 
+
+## Links
+
+- Live: https://YOUR-USERNAME.github.io/capstone/
+- Repo: https://github.com/YOUR-USERNAME/capstone
