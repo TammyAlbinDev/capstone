@@ -10,6 +10,9 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
   >
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,7 +31,7 @@
 
   <main>
 
-    <header>
+    <div class="hero">
       <h1>Board Game Finder</h1>
 
       <p>
@@ -36,16 +39,27 @@
         play because half the shelf tops out at four. My page will let you
         type a word and show the matching games with the details that decide it.
       </p>
-    </header>
+    </div>
 
-    <section id="search">
-      <h2>Search</h2>
-      <p>
-        Search for board games by typing a word and choosing how many games
-        to show.
-      </p>
-    </section>
+   <section id="search">
+  <h2>Search</h2>
 
+  <p>
+    Search for board games by typing a word and choosing how many games
+    to show.
+  </p>
+
+  <input
+    id="search-term"
+    type="text"
+    placeholder="Type a board game search word"
+  >
+
+  <button id="search-button" type="button">
+    Search
+  </button>
+</section>
+      
     <section id="results">
       <h2>Results</h2>
       <p>
