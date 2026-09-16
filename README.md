@@ -41,7 +41,7 @@ More Info URL: https://boardgamegeek.com/boardgame/174430/gloomhaven
 ## Three Questions
 
 1. Which board games can be played by only one player?
-2. Which board games have an average game time of 60 minutes of less?
+2. Which board games have an average game time of 60 minutes or less?
 3: Which board games were released in 2015 or later?
 
 ## Accountability Partner
@@ -50,5 +50,4 @@ GitHub: jenna-aurora
 ## Links
 
 - Live: https://TammyAlbinDev.github.io/capstone/
-- Repo: https://github.com/TammyAlbinDev/capstone
 - Repo: https://github.com/TammyAlbinDev/capstone
