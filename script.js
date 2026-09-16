@@ -1,6 +1,8 @@
 const searchInput = document.querySelector("#search-term");
 const searchButton = document.querySelector("#search-button");
 const searchMessage = document.querySelector("#search-message");
+const gameName = document.querySelector("#game-name");
+const minimumPlayers = document.querySelector("#minimum-players");
 
 async function askApi(searchTerm) {
   const response = await fetch(
@@ -9,6 +11,9 @@ async function askApi(searchTerm) {
 
   const data = await response.json();
 
+  gameName.textContent = data.records[0].Name;
+  minimumPlayers.textContent = data.records[0]["Minimum players"];
+    
   console.log("Status:", response.status);
   console.log("Records:", data.records.length);
 }
