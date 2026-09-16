@@ -2,6 +2,25 @@
 
 A host with six people coming over needs a game the whole group can play because half the shelf tops out at four.  My page will let you type a word and show the matching games with the details that decide it.  
 
+## The plan
+
+![My wireframe](wireframes.png)
+
+### Sections
+
+- **Search** — the box where a visitor types a word to search for board games.
+- **Results** — the matching games and the details that help decide if they work for the group.
+- **About the data** — information about the Board Games dataset and where the game information comes from.
+
+### User input
+
+- A visitor types a word to look for and the page shows the matching board games.
+- A visitor clicks 5, 10, or 20 and the page shows that many games.
+
+### Outputs
+
+Each result shows `Name`, `Minimum players`, `Maximum players`, and `Average game time`.
+
 # Board Games Dataset
 
 Dataset: Board Games
@@ -31,4 +50,5 @@ GitHub: jenna-aurora
 ## Links
 
 - Live: https://TammyAlbinDev.github.io/capstone/
+- Repo: https://github.com/TammyAlbinDev/capstone
 - Repo: https://github.com/TammyAlbinDev/capstone
