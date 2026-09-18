@@ -10,14 +10,19 @@ async function askApi(searchTerm) {
   const data = await response.json();
   const records = data.records;
 
-  document.getElementById("result-1").textContent =
-    records[0].Name + " needs at least " + records[0]["Minimum players"] + " players.";
+  let text = "";
 
-  document.getElementById("result-2").textContent =
-    records[1].Name + " needs at least " + records[1]["Minimum players"] + " players.";
+  records.forEach(function (record) {
+    text =
+      text +
+      "• " +
+      record.Name +
+      " needs at least " +
+      record["Minimum players"] +
+      " players. ";
+  });
 
-  document.getElementById("result-3").textContent =
-    records[2].Name + " needs at least " + records[2]["Minimum players"] + " players.";
+  document.getElementById("results-list").textContent = text;
 
   console.log("Status:", response.status);
   console.log("Records:", records.length);
