@@ -1,8 +1,6 @@
 const searchInput = document.querySelector("#search-term");
 const searchButton = document.querySelector("#search-button");
 const searchMessage = document.querySelector("#search-message");
-const gameName = document.querySelector("#game-name");
-const minimumPlayers = document.querySelector("#minimum-players");
 
 async function askApi(searchTerm) {
   const response = await fetch(
@@ -10,12 +8,19 @@ async function askApi(searchTerm) {
   );
 
   const data = await response.json();
+  const records = data.records;
 
-  gameName.textContent = data.records[0].Name;
-  minimumPlayers.textContent = data.records[0]["Minimum players"];
-    
+  document.getElementById("result-1").textContent =
+    records[0].Name + " needs at least " + records[0]["Minimum players"] + " players.";
+
+  document.getElementById("result-2").textContent =
+    records[1].Name + " needs at least " + records[1]["Minimum players"] + " players.";
+
+  document.getElementById("result-3").textContent =
+    records[2].Name + " needs at least " + records[2]["Minimum players"] + " players.";
+
   console.log("Status:", response.status);
-  console.log("Records:", data.records.length);
+  console.log("Records:", records.length);
 }
 
 searchButton.addEventListener("click", function () {
