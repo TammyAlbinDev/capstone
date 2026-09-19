@@ -14,7 +14,7 @@ A host with six people coming over needs a game the whole group can play because
 
 ### User input
 
-- A visitor types a word and clicks search to see up to five matching board games.
+- A visitor types a word and clicks Search to see up to five matching board games.
 
 ### Outputs
 
