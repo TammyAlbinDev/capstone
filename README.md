@@ -14,8 +14,7 @@ A host with six people coming over needs a game the whole group can play because
 
 ### User input
 
-- A visitor types a word to look for and the page shows the matching board games.
-- A visitor clicks 5, 10, or 20 and the page shows that many games.
+- A visitor types a word and clicks search to see up to five matching board games.
 
 ### Outputs
 
@@ -51,3 +50,11 @@ GitHub: jenna-aurora
 
 - Live: https://TammyAlbinDev.github.io/capstone/
 - Repo: https://github.com/TammyAlbinDev/capstone
+
+## What changed
+
+The project now has a working search that sends the visitor's search term to the Board Games API and displays matching games. Each result shows the game name, minimum players, maximum players, and average game time. I also added clear search instructions and completed the Release 1.0 milestone.
+
+## Reflection
+
+I planned to build a Board Game Finder that would help a group find games that fit their player count and time needs. The project shipped with a working search, API results, game details, clear instructions, and a completed Release 1.0 milestone. I changed the original plan by using an automatic five-result limit instead of letting visitors choose 5, 10, or 20 results because the final implementation uses the API's limit=5 request.
