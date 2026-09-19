@@ -44,6 +44,7 @@ More Info URL: https://boardgamegeek.com/boardgame/174430/gloomhaven
 3. Which board games were released in 2015 or later?
 
 ## Accountability Partner
+
 GitHub: jenna-aurora 
 
 ## Links
@@ -54,6 +55,12 @@ GitHub: jenna-aurora
 ## What changed
 
 The project now has a working search that sends the visitor's search term to the Board Games API and displays matching games. Each result shows the game name, minimum players, maximum players, and average game time. I also added clear search instructions and completed the Release 1.0 milestone.
+
+## How the request reaches my API
+
+A visitor supplies a board game name or keyword in the search box and clicks Search. The page sends that input to my API using this address shape: `https://tammy-data-api.lestertammy1977.workers.dev/api/v1/datasets/board-games/records?limit=5&search=YOUR_SEARCH_TERM`, where the `search` parameter is set by the visitor's input. My API answers with the board game records that match the search, and the page displays up to five matching games with their name, minimum players, maximum players, and average game time.
+
+The request goes through my own API, and there is no API key in the page.
 
 ## Reflection
 
