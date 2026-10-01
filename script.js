@@ -8,7 +8,9 @@ async function askApi(searchTerm) {
   const response = await fetch(
     `https://tammy-data-api.lestertammy1977.workers.dev/api/v1/datasets/board-games/records?limit=5&search=${encodeURIComponent(searchTerm)}`
   );
-
+    
+  console.log("response: ", response);
+    
   if (response.status === 200) {
     const data = await response.json();
     const records = data.records;
@@ -17,7 +19,9 @@ async function askApi(searchTerm) {
       resultsList.textContent = "Nothing matched.";
       return;
     }
-
+      
+    resultsList.textContent = "";
+      
     records.forEach(function (record) {
       const card = document.createElement("article");
 
@@ -36,6 +40,7 @@ async function askApi(searchTerm) {
     console.log("Status: ", response.status);
     console.log("Records length: ", records.length);
     console.log("Records: ", records);
+      
   } else {
     resultsList.textContent =
       "That request did not work. Status: " + response.status;
