@@ -24,14 +24,18 @@
     </ul>
 
     <ul>
-      <li><a href="#search">Search</a></li>
+      <li><a href="#search">Search</a></li> 
       <li><a href="#results">Results</a></li>
       <li><a href="#about">About the data</a></li>
     </ul>
   </nav>
 
   <main>
-
+    async function fetchData() {
+      console.log("Fetch starting..."); 
+      try {
+        const response +await fetch ('https:boardgame.com');
+      
     <div class="hero">
       <h1>Board Game Finder</h1>
 
@@ -59,7 +63,6 @@
         Search
       </button>
 
-      <p id="search-message"></p>
     </section>
 
     <section id="results">

@@ -1,11 +1,9 @@
 const searchInput = document.querySelector("#search-term");
 const searchButton = document.querySelector("#search-button");
-const searchMessage = document.querySelector("#search-message");
 const resultsList = document.querySelector("#results-list");
 
 async function askApi(searchTerm) {
   resultsList.textContent = "Loading…";
-  searchMessage.textContent = "";
 
   const response = await fetch(
     `https://tammy-data-api.lestertammy1977.workers.dev/api/v1/datasets/board-games/records?limit=5&search=${encodeURIComponent(searchTerm)}`
@@ -35,8 +33,9 @@ async function askApi(searchTerm) {
       resultsList.appendChild(card);
     });
 
-    console.log("Status:", response.status);
-    console.log("Records:", records.length);
+    console.log("Status: ", response.status);
+    console.log("Records length: ", records.length);
+    console.log("Records: ", records);
   } else {
     resultsList.textContent =
       "That request did not work. Status: " + response.status;
